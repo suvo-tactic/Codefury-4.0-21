@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fas fa-book-reader"></i> KnowZard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Sign Up/In</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <section class="section section-top">
+        <div class="content rellax" data-rellax-speed="4">
+            <h1><b>Virtual Group Learning platform</b></h1>
+            <a href="#about" class="btn btn-block btn-lg">Know More</a>
+        </div>
+    </section>
+
+    <section class="section section-stream">
+        <div class="content rellax" data-rellax-speed="5">
+            <div>
+                <h2 class="secondary-text">Tell something 2</h2 class="secondary-text">
+                <p>
+                    Do you find it difficult to study at home? With several doubts that
+                    truobles you all the time? <br>
+                    Do you need a suitable peer group to discuss doubtful concepts? 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-grid">
+        <div class="division rellax" data-rellax-speed="1" data-rellax-xs-speed="1">
+            <i class="fas fa-share-square fa-3x secondary-text"></i>
+            <h2>Share<span class="secondary-text dot">.</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                    dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+            </p>
+        </div>
+        <div class="division rellax" data-rellax-speed="4" data-rellax-xs-speed="1">
+            <i class="fas fa-users fa-3x secondary-text"></i>
+            <h2>Interact<span class="secondary-text dot">.</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                    dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+            </p>
+        </div>
+        <div class="division rellax" data-rellax-speed="7" data-rellax-xs-speed="1">
+            <i class="fas fa-book fa-3x secondary-text"></i>
+            <h2>Resources<span class="secondary-text dot">.</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+                    dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="quick_text">Why KnowZard?</h1>
+        <div>
+            <p>KnowZard helps you open the doors to a world beyond the mundane process of
+                finding a peer group who share the interest in same course of study.
+                KnowZard provides you with virtual study rooms and resources submitted
+                by students from around the globe to help you find the right tune and support.
+                Learning has never been this collaborative. So come on, start a brand 
+                new journey with KnowZard's Virtual Group Learning platform.
+                See you on the other side ;)
+            </p>
+        </div>
+    </section>
+    
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div>
+                        <h1 class="quick_text">Help us to sign you up for excitement</h1>
+                    </div>
+                    <div class="para">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet fuga nisi, repellat nam 
+                            ea blanditiis quod quos nihil quis dicta exercitationem, recusandae inventore pariatur dolor voluptas 
+                            ipsam animi corporis.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Sign In</span>
+                            <span onclick="register()">Sign Up</span>
+                            <hr id="indicator">
+
+                            <form id="loginForm">
+                                <div class="social-container">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div> 
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Sign In</button>
+                                <a href="#">Forgot Password</a>
+                            </form>
+                            <form id="regForm">
+                                <div class="social-container">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" class="btn">Sign Up</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="form-container2">
+                        <h1 class="quick_text">Contact Us</h1>
+                        <form>
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email Address">
+                            <textarea name="message" id="" cols="56" rows="10" placeholder="Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <iframe src="https://www.google.com/maps?q=Bangalore%2C%20Karnataka%2C%20India&z=14&t=&ie=UTF8&output=embed"></iframe><noscript> Full functionality of this site requires JavaScript to be enabled. Learn how to <a href="https://browseradvice.com/how-to-enable-javascript/">Enable JavaScript</a> in your browser.</noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="layout_padding footer_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div><a class="navbar-brand" href="#"><i class="fas fa-book-reader"></i> KnowZard</a></div>
+					<p class="dolor_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium unde accusamus quas</p>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<h1 class="quick_text">Quick links</h1>
+                    <div class="chevron_arrow">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+				</div>
+                
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<h1 class="quick_text">Subcribe</h1><br>
+					<input type="text" class="email_text" placeholder="Your Email" name="Name">
+					<a href="#login" class="btn btn-block btn-lg">Sign Up</a>
+				</div>
+
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<h1 class="quick_text">Contact Us</h1>
+					<div class="chevron_arrow">
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/Bengaluru,+Karnataka/@12.9538477,77.3507442,10z/data=!3m1!4b1!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627">Bangalore India</a></li>
+                            <li>codefury@info.com</li>
+                            <li>+919191919191</li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="copyright">
+    	<p class="copyright_text">2021 Copyright Codefury&reg;</p>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+        let rellax = new Rellax('.rellax');
+  </script>
+  <script>
+
+    var loginForm = document.getElementById("loginForm");
+    var regForm = document.getElementById("regForm");
+    var indicator = document.getElementById("indicator");
+
+    function register(){
+        regForm.style.transform = "translateX(3px)";
+        loginForm.style.transform = "translateX(3px)";
+        indicator.style.transform = "translateX(181px)";
+    }
+    function login(){
+        regForm.style.transform = "translateX(347px)";
+        loginForm.style.transform = "translateX(347px)";
+        indicator.style.transform = "translateX(27px)";
+    }
+
+  </script>
+  <script>
+
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";}}
+        function topFunction() {
+        document.documentElement.scrollTop = 0;
+        }
+
+  </script>
+</body>
+</html>

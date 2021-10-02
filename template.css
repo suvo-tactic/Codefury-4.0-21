@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+	--primary-color: #6218A8;
+	--secondary--color: #f5c42f;
+	--text-color: #c5bbec;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: var(--primary-color);
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Navbar */
+.navbar{
+    padding-right: 30px;
+}
+.navbar-brand{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+.nav-item{
+    font-weight: 100;
+    text-align: right;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+    outline: none;
+	background: var(--secondary--color);
+	color: #fff;
+	border-radius: 20px;
+	padding: 8px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+
+.primary-text {
+	color: var(--primary-color);
+}
+
+.secondary-text {
+	color: var(--secondary--color);
+}
+
+.section {
+	position: relative;
+	padding: 0 20px;
+}
+
+/* Section Top */
+.section-top {
+	min-height: 500px;
+	background: url('study.jpg') no-repeat center center/cover;
+}
+
+.section-top h1 {
+	font-size: 70px;
+	line-height: 1.3;
+}
+
+.section-top .content {
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	width: 55%;
+}
+
+/* Section Stream */
+.section-stream {
+	min-height: 700px;
+}
+
+.section-stream h2 {
+	font-size: 35px;
+}
+
+.section-stream .play {
+	width: 27%;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+.section-stream .content {
+	position: absolute;
+	width: 50%;
+	top: 130px;
+	right: 70px;
+}
+
+.section-stream .content > div, .section-grid > div {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.fas{
+    transition: 0.3s ease-in-out;
+}
+.fas:hover{
+    transform: scale(1.16);
+}
+
+/* Section Grid */
+.section-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.section-grid p {
+	color: var(--text-color);
+}
+
+.section-grid .dot {
+	font-size: 40px;
+	padding-left: 2px;
+}
+
+.footer_section{
+    width: 100%;
+    float: left;
+    background-color: #6218A8;
+    height: auto;
+    padding: 7em 0 5em;
+}
+
+.dolor_text {
+   width: 100%;
+   float: left;
+   font-size: 12pt;
+   color: #fffefa;
+   line-height: 35px;
+   margin-left: 0;
+   font-weight: 100;
+}
+
+.quick_text{
+    width: 68%;
+    float: left;
+    font-size: 24pt;
+    color: #ffffff;
+    border-bottom: 4px solid var(--secondary--color);
+    margin-bottom: 26px;
+}
+
+.chevron_arrow{
+    width: 100%;
+    float: left;
+    font-size: 12pt;
+    color: #ffffff;
+    line-height: 41px;
+}
+
+
+.email_text{
+    background-color: rgba(238, 238, 238, 0.863);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 90%;
+}
+
+.copyright{
+    width: 100%;
+    padding-top: 1em;
+    background-color: #4f1386;
+}
+
+.copyright_text{
+    width: 100%;
+    float: left;
+    font-size: 14pt;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+}
+#about{
+    background-color: white;
+    color: black;
+    padding:5% 12% 1%;
+    align-items: center;
+    height: 25em;
+	width: 100%;
+	display: inline-block;
+}
+#about div{
+	display: inline-block;
+}
+#about h1{
+    align-items: center;
+    color: black;
+}
+#about p{
+    margin: 4% 0% 1%;
+}
+#login{
+	padding: 3.5em 0px;
+	background-color: #6218A8;
+}
+#login h1{
+	top: 150px;
+}
+.para{
+	display: inline-block;
+	padding: 2em 0em;
+}
+.form-container{
+	background-color: white;
+	height: 450px;
+    width: 350px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.7);
+	overflow: hidden;
+}
+
+.form-container span{
+	font-weight: bold;
+	padding: 5px 10px;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	width: 150px;
+}
+
+.form-btn{
+	display: inline-block;
+}
+form .btn{
+	cursor: pointer;
+	width: 100%;
+}
+
+.form-container form{
+	max-width: 300px;
+	padding: 0 20px;
+	position: absolute;
+	top: 100px;
+	color: black;
+	transition: transform 0.6s;
+}
+.form-container2{
+	padding: 10px 20px;
+}
+form input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+form textarea {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	height: 80%;
+}
+#loginForm{
+	left: -320px;
+}
+#regForm{
+	left: 24px;
+}
+form a{
+	font-size: 16px;
+	color: black;
+}
+
+#indicator{
+	width: 100px;
+	border: none;
+	height: 4px;
+	background: #440281;
+	margin-top: 8px;
+	transform: translateX(181px);
+	transition: transform 0.6s;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	border-color: black;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2px 5px;
+	height: 40px;
+	width: 40px;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 5px;
+	font-size: 18px;
+}
+
+#contact{
+	padding: 30px;
+	background: white;
+	height: 70%;
+}
+#contact h1{
+	color: black;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+	.section-top .content,
+	.section-stream .play,
+	.section-stream .content {
+		position: static;
+		width: 100%;
+	}
+
+	.section-top {
+		min-height: 200px;
+		padding-top: 20px;
+	}
+
+	.section-top .content {
+		text-align: center;
+	}
+
+	.section-top .content h1 {
+		font-size: 45px;
+	}
+
+	.section-stream {
+		min-height: 400px;
+	}
+
+    .content{
+        padding-top: 4em;
+    }
+
+	.section-grid {
+		display: block;
+		margin-top: 0;
+	}
+
+	#about p{
+		font-size: 85%;
+	}
+}
